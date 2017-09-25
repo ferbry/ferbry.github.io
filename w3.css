@@ -218,4 +218,7 @@ body {
     header, h1, p, ul, footer{
         color: white;
     }
+    a.w3-bar-item {
+        color: black;
+    }
   

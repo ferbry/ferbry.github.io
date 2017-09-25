@@ -7,19 +7,22 @@
 </head>
 
 <body>
-
-<nav class="w3-lime w3-container w3-card">
+<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+ <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
     <p>
-    <a href="https://google.es/" class="w3-quarter">Google</a>
-    <a href="https://gmail.com/" class="w3-quarter">Gmail</a>
-    <a href="https://wikipedia.org/" class="w3-quarter">Wikipedia</a>
-    <a href="https://yahoo.es/" class="w3-quarter">Yahoo</a>
+    <a href="https://google.es/" class="w3-bar-item w3-button">Google</a>
+    <a href="https://gmail.com/" class="w3-bar-item w3-button">Gmail</a>
+    <a href="https://wikipedia.org/" class="w3-bar-item w3-button">Wikipedia</a>
+    <a href="https://yahoo.es/" class="w3-bar-item w3-button">Yahoo</a>
     </p>
-</nav>
 
-<header class="w3-container w3-card-4 w3-deep-purple"><p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</header>
+</div>
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+  </div>
+</div>
 <br>
 
 <main>
@@ -106,5 +109,13 @@
     enim ac nulla sodales pellentesque.
 </footer>
 
-
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 </body></html>
