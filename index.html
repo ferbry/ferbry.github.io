@@ -3,38 +3,41 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <link rel="stylesheet" href="w3.css">
-    <title>Ejemplo de elementos semáticos en un página</title>
+    <title>Ejemplo de elementos semánticos en un página</title>
 </head>
 
 <body>
 
 <nav class="w3-lime w3-container w3-card">
     <p>
-    <a href="https://google.es/">Google</a> |
-    <a href="https://gmail.com/">Gmail</a> |
-    <a href="https://wikipedia.org/">Wikipedia</a> |
-    <a href="https://yahoo.es/">Yahoo</a>
+    <a href="https://google.es/" class="w3-quarter">Google</a>
+    <a href="https://gmail.com/" class="w3-quarter">Gmail</a>
+    <a href="https://wikipedia.org/" class="w3-quarter">Wikipedia</a>
+    <a href="https://yahoo.es/" class="w3-quarter">Yahoo</a>
     </p>
 </nav>
 
-<br>
-<br>
-<header class="w3-panel w3-card-4 w3-deep-purple"><p>
+<header class="w3-container w3-card-4 w3-deep-purple"><p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </header>
+<br>
 
 <main>
     <section>
         <article>
+            <div class="w3-container w3-teal">
             <header>
                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+            </header>
+            </div>
+            <div class="w3-container">
                 <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis
                     enim ac nulla sodales pellentesque. Vivamus faucibus ultrices orci, ac
                     ultrices urna condimentum quis. Praesent et lorem porta, tincidunt sapien et,
                     aliquet enim.
                   </p>
-            </header>
+            </div>
             <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis
                 enim ac nulla sodales pellentesque. Vivamus faucibus ultrices orci, ac
@@ -88,11 +91,13 @@
     
     <aside>
         <p>Leer también:</p>
+        <div>
         <ul>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             <li>Morbi mattis enim ac nulla sodales pellentesque.</li>
             <li>Vivamus faucibus ultrices orci, ac ultrices urna condimentum quis.</li>
         </ul>
+        </div>
     </aside>
 </main>
 
